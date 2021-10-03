@@ -3,6 +3,7 @@
     "アカウント": [
       "a-introduction",
       "a-create-account",
+      "a-login",
       "a-manage-account",
       "a-change-user-info",
       "a-payout"
