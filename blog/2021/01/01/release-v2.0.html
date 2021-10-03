@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Mathlog Ver 2.0 リリース · Mathlog Help</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="圧倒的なデザインの改善とフィードの充実化。"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Mathlog Ver 2.0 リリース · Mathlog Help"/><meta property="og:type" content="website"/><meta property="og:url" content="https://help.mathlog.info/blog/2021/01/01/release-v2.0"/><meta property="og:description" content="圧倒的なデザインの改善とフィードの充実化。"/><meta property="og:image" content="https://help.mathlog.info/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://help.mathlog.info/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://help.mathlog.info/blog/atom.xml" title="Mathlog Help Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://help.mathlog.info/blog/feed.xml" title="Mathlog Help Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo.png" alt="Mathlog Help"/><h2 class="headerTitleWithLogo">Mathlog Help</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/a-introduction" target="_self">使い方ガイド</a></li><li class="siteNavGroupActive"><a href="/blog/" target="_self">開発者ブログ</a></li><li class=""><a href="/docs/contact" target="_self">お問い合わせ</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Recent Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Recent Posts</h3><ul class=""><li class="navListItem"><a class="navItem" href="/blog/2021/09/20/event-result">数学書プレゼント企画結果発表</a></li><li class="navListItem"><a class="navItem" href="/blog/2021/07/24/2000-articles">Mathlog 2000記事達成</a></li><li class="navListItem"><a class="navItem" href="/blog/2021/05/01/release-v3.0">Mathlog Ver 3.0 リリース</a></li><li class="navListItem"><a class="navItem" href="/blog/2021/04/01/yahoo-award">Yahoo!賞を獲得</a></li><li class="navListItem"><a class="navItem" href="/blog/2021/03/24/tokyo-koubunren-award">東京都高等学校文化連盟による表彰</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="lonePost"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2021/01/01/release-v2.0">Mathlog Ver 2.0 リリース</a></h1><p class="post-meta">January 1, 2021</p><div class="authorBlock"></div></header><div><span><p>圧倒的なデザインの改善とフィードの充実化。</p>
+<p><img src="/img/blog/2021-01-01.jpeg" alt="Ver 2.0のデザイン"></p>
+<!--truncate-->
+<p>いつもMathlogを利用していただき、ありがとうございます。ついに、Mathlog Ver 2.0をリリースしました。</p>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">数学の情報共有に更なる革命を！<br><br>新年、生まれ変わったMathlogで、あなたの数学ライフをより快適にします<br><br>今回の大型バージョンアップでは、<br><br>・デザインの洗練<br>・興味を惹くコンテンツの提供<br><br>にこだわって開発しました<br><br>あなたがまだ見ぬ数学に没頭する機会を見つけよう<a href="https://t.co/jGbERRV8ul">https://t.co/jGbERRV8ul</a> <a href="https://t.co/RaFQNO97QM">pic.twitter.com/RaFQNO97QM</a></p>&mdash; Mathlog 公式 【2000記事突破】 (@MathlogOfficial) <a href="https://twitter.com/MathlogOfficial/status/1344964271151595520?ref_src=twsrc%5Etfw">January 1, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>今までの記事の投稿が目立たないデザインを一新し、多くの人が投稿した記事が真っ先に目に入るようにしました。例えば、ランキング機能で質の高い記事を読んだり、トレンド機能で最近流行りの記事を読んだりすることができます。</p>
+<p>また、参考文献を挿入可能にし、Amazonアフィリエイトを通じて投稿者に還元されるようにしました。これにより、閲覧者には文献が表示されるようになり、疑わしいネット情報を自分で確かめられるような仕組みをつくりました。</p>
+<p>さらに、今回のアップデートにより、Twitterによるアカウント作成に対応いたしましたので、簡単に利用を開始できるようになりました。</p>
+</span></div></div><div class="blogSocialSection"></div></div><div class="blog-recent"><a class="button" href="/blog/">Recent Posts</a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="copyright">Copyright © 2021 Mathlog
+  </section></footer></div></body></html>

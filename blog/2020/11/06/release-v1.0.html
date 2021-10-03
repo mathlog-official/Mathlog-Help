@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Mathlog Ver 1.0 リリース · Mathlog Help</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="数学特化の情報共有サービスMathlogが本格的に始動しました。"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Mathlog Ver 1.0 リリース · Mathlog Help"/><meta property="og:type" content="website"/><meta property="og:url" content="https://help.mathlog.info/blog/2020/11/06/release-v1.0"/><meta property="og:description" content="数学特化の情報共有サービスMathlogが本格的に始動しました。"/><meta property="og:image" content="https://help.mathlog.info/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://help.mathlog.info/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://help.mathlog.info/blog/atom.xml" title="Mathlog Help Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://help.mathlog.info/blog/feed.xml" title="Mathlog Help Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/logo.png" alt="Mathlog Help"/><h2 class="headerTitleWithLogo">Mathlog Help</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/a-introduction" target="_self">使い方ガイド</a></li><li class="siteNavGroupActive"><a href="/blog/" target="_self">開発者ブログ</a></li><li class=""><a href="/docs/contact" target="_self">お問い合わせ</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Recent Posts</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Recent Posts</h3><ul class=""><li class="navListItem"><a class="navItem" href="/blog/2021/09/20/event-result">数学書プレゼント企画結果発表</a></li><li class="navListItem"><a class="navItem" href="/blog/2021/07/24/2000-articles">Mathlog 2000記事達成</a></li><li class="navListItem"><a class="navItem" href="/blog/2021/05/01/release-v3.0">Mathlog Ver 3.0 リリース</a></li><li class="navListItem"><a class="navItem" href="/blog/2021/04/01/yahoo-award">Yahoo!賞を獲得</a></li><li class="navListItem"><a class="navItem" href="/blog/2021/03/24/tokyo-koubunren-award">東京都高等学校文化連盟による表彰</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer postContainer blogContainer"><div class="wrapper"><div class="lonePost"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle"><a href="/blog/2020/11/06/release-v1.0">Mathlog Ver 1.0 リリース</a></h1><p class="post-meta">November 6, 2020</p><div class="authorBlock"></div></header><div><span><p>数学特化の情報共有サービスMathlogが本格的に始動しました。</p>
+<!--truncate-->
+<h2><a class="anchor" aria-hidden="true" id="mathlogの概要"></a><a href="#mathlogの概要" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mathlogの概要</h2>
+<div class="movie">
+<iframe width="100%" height="180" src="https://www.youtube.com/embed/BICdMd4614A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p>Mathlogは数学特化の情報共有サービスで、精錬されたデザインの数学記事を簡単に作成することができます。数式の記法がよくわからない初心者の人でも、数式をボタンで選ぶだけで簡単に数式を挿入できる機能が備わっています。</p>
+<p>また、デザインもこちらで予めご用意しているため、あなたが整える必要はありません。出来上がった数学の記事をPDFでダウンロードすることもできるため、オフラインで印刷して使用したり、タブレットで書き込みながら利用することが可能になっています。</p>
+<p>さらに、既にコンテンツをTeXで作成していた方は、TeXインポートの機能を利用することで、簡単に記事を作成することができます。あなたがよく使う数式を簡単に挿入できるマクロ機能も備わっているので、数学の文章をたくさん書きたい人は、ぜひご活用ください。</p>
+<h2><a class="anchor" aria-hidden="true" id="mathlogのビジョン"></a><a href="#mathlogのビジョン" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mathlogのビジョン</h2>
+<p>Mathlogは数学の情報共有を圧倒的に便利にすることで、数学界に革命を起こすことをビジョンとして運営しています。 具体的には、数学徒それぞれの視点から見える数学を自由に共有できる空間を提供し、数学に対する新たな気づきを得られるサービスにしたいです。そのために、私達は数学特化の機能を重視し、ニッチに尖り続けるアップデートを続けていきたいと考えています。</p>
+<h2><a class="anchor" aria-hidden="true" id="開発メンバー"></a><a href="#開発メンバー" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>開発メンバー</h2>
+<p>Mathlogは2018年の10月から開発をはじめました。最初の方は現在の<a href="https://twitter.com/mishima_ryuji">プロジェクトリーダーの三嶋隆史</a>のみで開発をしていましたが、2019年10月ごろに東京高専の授業科目の社会実装や組み込みマイスターをきっかけに、チーム開発が始まりました。授業が終わった後も開発を続け、現在は4人のメンバーで活動しています。</p>
+<h2><a class="anchor" aria-hidden="true" id="開発に込めた想い"></a><a href="#開発に込めた想い" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>開発に込めた想い</h2>
+<p>Mathlogにはプロジェクトリーダーの三嶋が特に熱い想いを込めて開発しています。三嶋は中学校3年生から数学がとても大好きになり、未解決難題を解くような数学者になりたいと思っていました。ですが、数学のイベントやハイレベルなコミュニティに行く機会が増え、数学者を目指す自分に限界を感じ、数学者になる夢を断念しました。しかし、今まで数学を頑張ってきたので、何も数学に残せないことに虚しさを感じていました。</p>
+<p>そこで、高専で習っていた情報工学の知識と数学に関する知識を組み合わせて、今のMathlogをつくることを決心しました。そこからは、初めてのサービス化ということもあり、大変なことも多かったですが、たくさんの方々に支えられて高専の間にリリースまで達成することができました。これからも、Mathlogに情熱を持ってサービスの運営に取り組んでいきます。</p>
+<h2><a class="anchor" aria-hidden="true" id="拡散のお願い"></a><a href="#拡散のお願い" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>拡散のお願い</h2>
+<p>SNSで以下のツイートを拡散していただけますと幸いです。</p>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">数学の情報共有に革命を！<br><br>数学の記事を通して数学コミュニティの発展を目指します。数学に特化した機能で数学ライフをより豊かに。<br><br>デザインや数式入力は初心者でも簡単！あなたの中にある数学を公開しませんか？<br><br>まずはトップページでデモ体験！<a href="https://t.co/jGbERRV8ul">https://t.co/jGbERRV8ul</a> <a href="https://t.co/MQv1hJOHXr">pic.twitter.com/MQv1hJOHXr</a></p>&mdash; Mathlog 公式 【2000記事突破】 (@MathlogOfficial) <a href="https://twitter.com/MathlogOfficial/status/1324665744039108611?ref_src=twsrc%5Etfw">November 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h2><a class="anchor" aria-hidden="true" id="謝辞"></a><a href="#謝辞" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>謝辞</h2>
+<p>テストやフィードバックに協力してくださった東京高専の先生方、技術的な意見をくださったYahoo!の社員の方々、使いやすいサービスにするために意見をくださった数理空間トポスの関係者の皆様および日曜数学会の参加者の方々の助けがあって、Mathlogをリリースすることができました。本当にありがとうございました。</p>
+</span></div></div><div class="blogSocialSection"></div></div><div class="blog-recent"><a class="button" href="/blog/">Recent Posts</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#mathlogの概要">Mathlogの概要</a></li><li><a href="#mathlogのビジョン">Mathlogのビジョン</a></li><li><a href="#開発メンバー">開発メンバー</a></li><li><a href="#開発に込めた想い">開発に込めた想い</a></li><li><a href="#拡散のお願い">拡散のお願い</a></li><li><a href="#謝辞">謝辞</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="copyright">Copyright © 2021 Mathlog
+  </section></footer></div></body></html>
