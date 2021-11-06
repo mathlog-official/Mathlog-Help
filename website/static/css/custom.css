@@ -10,9 +10,9 @@
   margin: 10px;
 }
 
-.post a:not(.button){
+.post a:not(.button) {
   color: rgb(0, 162, 255);
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 .post h1.postHeaderTitle {
@@ -25,11 +25,9 @@
   color: black;
 }
 
-
-.nav-footer{
+.nav-footer {
   margin-top: 3rem;
 }
-
 
 .movie {
   position: relative;
@@ -54,6 +52,10 @@
 }
 
 @media only screen and (max-width: 1023px) {
+  .docsContainer .wrapper .post .postHeader:before,
+  .docsContainer .wrapper .post .postHeaderTitle:before {
+    height: 210px;
+  }
 }
 
 @media only screen and (min-width: 1400px) {

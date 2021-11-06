@@ -6,7 +6,7 @@
     "tagline": "あなたの数学コンテンツ作成をサポートします。",
     "docs": {
       "a-change-user-info": {
-        "title": "プロフィールの管理"
+        "title": "プロフィール管理"
       },
       "a-create-account": {
         "title": "アカウント作成"
@@ -18,7 +18,7 @@
         "title": "ログイン方法"
       },
       "a-manage-account": {
-        "title": "アカウントの管理"
+        "title": "アカウント管理"
       },
       "a-payout": {
         "title": "払い出し設定(準備中)"
