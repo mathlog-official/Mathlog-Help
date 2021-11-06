@@ -1,6 +1,6 @@
 ---
 id: e-introduction
-title: はじめに
+title: はじめに(準備中)
 ---
 
-はじめに
+準備中

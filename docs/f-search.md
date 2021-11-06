@@ -1,6 +1,6 @@
 ---
 id: f-search
-title: 検索
+title: 検索(準備中)
 ---
 
-検索
+準備中

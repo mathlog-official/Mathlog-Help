@@ -1,6 +1,6 @@
 ---
 id: e-macros
-title: マクロ
+title: マクロ(準備中)
 ---
 
-マクロ
+準備中

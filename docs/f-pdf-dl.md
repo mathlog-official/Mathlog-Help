@@ -1,6 +1,6 @@
 ---
 id: f-pdf-dl
-title: PDFダウンロード
+title: PDFダウンロード(準備中)
 ---
 
-PDF ダウンロード
+準備中
